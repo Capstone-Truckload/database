@@ -21,7 +21,7 @@ create table Trucker (
        PRIMARY KEY(id)
 );
 
-create table oads (
+create table Loads (
        id bigserial,
        customer_id bigserial REFERENCES  Customer (id),
        trucker_id bigserial REFERENCES Trucker(id),
